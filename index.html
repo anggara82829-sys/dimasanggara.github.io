@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Dimas Anggara Putra</title>
+  <meta name="description" content="Portofolio resmi Dimas Anggara Putra: Content Creator, Graphic Designer, IT & Social Media Specialist, dan Pilot Drone di Bandung Barat.">
+  <meta name="author" content="Dimas Anggara Putra">
+
+  <!-- Plus Jakarta Sans & Schibsted Grotesk via Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Schibsted+Grotesk:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            display: ['"Schibsted Grotesk"', 'sans-serif'],
+          },
+          colors: {
+            // Palet Botanical Olive & Mineral Sage Pilihan Anda
+            primary: '#404E3B',       // Deep Forest Olive (Warna Utama & Tombol)
+            primaryHover: '#2E392B',
+            accent: '#7B9669',        // Sage / Olive Green
+            secondary: '#546351',     // Slate Sage Text
+            mineral: '#6C8480',       // Mineral Slate Grey
+            celadon: '#BAC8B1',       // Celadon Mist Soft
+            silver: '#E6E6E6',        // Muted Silver Border / Surface
+            paper: '#FAFAF8',         // Creamy Off-white
+            cardBg: '#FFFFFF',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      background-color: #FAFAF8;
+      color: #1E261B;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+    ::selection {
+      background: #7B9669;
+      color: #ffffff;
+    }
+    .hamburger-line {
+      width: 26px;
+      height: 2px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      display: block;
+      background-color: #404E3B;
+    }
+    .filter-btn.active {
+      background-color: #404E3B;
+      color: #ffffff;
+      font-weight: 700;
+      border-color: #404E3B;
+    }
+  </style>
+</head>
+<body class="bg-paper text-primary selection:bg-accent selection:text-white">
+
+  <!-- ==================== HEADER START ==================== -->
+  <header class="bg-white/95 backdrop-blur-md fixed top-0 left-0 w-full flex items-center z-50 border-b border-silver/80">
+    <div class="max-w-6xl mx-auto px-6 w-full">
+      <div class="flex items-center justify-between relative h-20">
+        
+        <!-- Brand / Monogram -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <img src="assets/dimas.jpg" alt="Dimas Anggara Putra" class="w-10 h-10 rounded-full object-cover object-top border-2 border-accent">
+          <div class="flex flex-col">
+            <span class="font-display font-extrabold text-lg text-primary tracking-tight leading-tight group-hover:text-accent transition">dimasanggara</span>
+            <span class="text-[11px] text-secondary font-medium">Creative &middot; IT &middot; Pilot Drone</span>
+          </div>
+        </a>
+
+        <!-- Desktop & Mobile Nav -->
+        <div class="flex items-center">
+          <button id="hamburger" type="button" class="block lg:hidden p-2 focus:outline-none">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+
+          <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-xl rounded-xl max-w-[260px] w-full right-4 top-full border border-silver lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:border-none lg:rounded-none lg:py-0">
+            <ul class="block lg:flex items-center space-x-1 lg:space-x-8 text-sm font-semibold text-secondary">
+              <li>
+                <a href="#home" class="block py-2.5 px-4 lg:p-0 hover:text-primary transition">Beranda</a>
+              </li>
+              <li>
+                <a href="#about" class="block py-2.5 px-4 lg:p-0 hover:text-primary transition">Tentang Saya</a>
+              </li>
+              <li>
+                <a href="#portfolio" class="block py-2.5 px-4 lg:p-0 hover:text-primary transition">Portfolio</a>
+              </li>
+              <li>
+                <a href="#pengalaman" class="block py-2.5 px-4 lg:p-0 hover:text-primary transition">Pengalaman</a>
+              </li>
+              <li>
+                <a href="#contact" class="block py-2.5 px-4 lg:p-0 hover:text-primary transition">Kontak</a>
+              </li>
+              <li class="pt-3 lg:pt-0 lg:ml-4 border-t lg:border-t-0 border-silver">
+                <a href="https://wa.me/6283829406653?text=Halo%20Dimas,%20saya%20melihat%20portofolio%20Anda." target="_blank" class="block text-center py-2 px-5 rounded-full text-xs font-bold text-white bg-primary hover:bg-primaryHover transition">
+                  Chat WhatsApp
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- ==================== HEADER END ==================== -->
+
+  <main>
+
+    <!-- ==================== HERO SECTION START (Opsi A) ==================== -->
+    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 bg-white border-b border-silver/70">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex flex-wrap items-center">
+          
+          <!-- Left Column (Teks Sambutan Hangat) -->
+          <div class="w-full self-center lg:w-7/12 space-y-5 pr-0 lg:pr-8">
+            
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-paper border border-celadon text-xs font-bold uppercase tracking-wider text-primary">
+              <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+              <span>Terbuka untuk Proyek Kreatif &amp; Peluang Kerja</span>
+            </div>
+
+            <h1 class="text-base font-semibold text-accent md:text-xl">
+              Halo Semua 👋, Saya 
+              <span class="block font-display font-extrabold text-primary text-4xl sm:text-5xl lg:text-6xl mt-1 tracking-tight">
+                Dimas Anggara Putra
+              </span>
+            </h1>
+
+            <h2 class="font-bold text-secondary text-lg sm:text-xl">
+              Content Creator, IT &amp; Social Media Specialist
+            </h2>
+
+            <p class="font-normal text-secondary text-base leading-relaxed max-w-xl">
+              Menghubungkan empat tahun kedisiplinan proyek infrastruktur nasional BUMN (PT. Nindya Karya) dengan keahlian pilot drone udara, produksi video promosi (DaVinci/CapCut), materi iklan cetak/digital, dan pembuatan website properti.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <a href="#contact" class="text-sm font-bold text-white bg-primary hover:bg-primaryHover py-3.5 px-8 rounded-full shadow-sm hover:opacity-95 transition duration-300">
+                Hubungi Saya
+              </a>
+              <a href="#portfolio" class="text-sm font-bold text-primary bg-paper hover:bg-silver/60 border border-celadon py-3.5 px-8 rounded-full transition duration-300">
+                Lihat Portfolio &darr;
+              </a>
+            </div>
+
+            <!-- Lokasi & Kontak Cepat -->
+            <div class="flex flex-wrap items-center gap-6 pt-4 text-xs font-semibold text-mineral border-t border-silver/60">
+              <div class="flex items-center gap-1.5">
+                <i data-lucide="map-pin" class="w-4 h-4 text-accent"></i>
+                <span>Cikalong Wetan, Bandung Barat</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <i data-lucide="phone" class="w-4 h-4 text-accent"></i>
+                <span>0838-2940-6653</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <i data-lucide="mail" class="w-4 h-4 text-accent"></i>
+                <span>dimasap0117@gmail.com</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column (Foto Diri dengan Organic SVG Blob Backdrop) -->
+          <div class="w-full self-end lg:w-5/12 mt-12 lg:mt-0">
+            <div class="relative max-w-sm mx-auto">
+              
+              <!-- Organic SVG Backdrop Shape berwarna Sage & Celadon (#BAC8B1 / #7B9669) -->
+              <span class="absolute -top-6 -left-6 -z-10 w-[112%] h-[112%] flex items-center justify-center opacity-80">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                  <path fill="#BAC8B1" d="M48.2,-58.4C61.9,-46.8,72.1,-31.8,75.1,-15.3C78.1,1.2,74,19.2,64.2,33.5C54.4,47.8,38.9,58.4,22.2,64.3C5.5,70.2,-12.4,71.4,-28.9,65.3C-45.4,59.2,-60.5,45.8,-68.1,28.8C-75.7,11.8,-75.8,-8.8,-68.4,-26.4C-61,-44,-46.1,-58.6,-29.9,-69.1C-13.7,-79.6,3.8,-86,19.9,-83.4C36,-80.8,34.5,-70,48.2,-58.4Z" transform="translate(100 100) scale(1.05)" />
+                </svg>
+              </span>
+
+              <!-- Portrait Frame -->
+              <div class="rounded-3xl overflow-hidden border-4 border-white shadow-xl bg-paper">
+                <img src="assets/dimas.jpg" alt="Dimas Anggara Putra" class="w-full h-auto object-cover object-top hover:scale-105 transition duration-500">
+              </div>
+
+              <!-- Floating badge kecil -->
+              <div class="absolute -bottom-4 right-4 bg-white/95 backdrop-blur-sm border border-celadon px-4 py-2 rounded-2xl shadow-lg flex items-center gap-2.5">
+                <span class="w-3 h-3 rounded-full bg-accent"></span>
+                <div>
+                  <div class="text-[11px] font-extrabold text-primary">Pilot Drone &amp; Kreator</div>
+                  <div class="text-[10px] text-secondary">Bandung Barat, ID</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ==================== HERO SECTION END ==================== -->
+
+
+    <!-- ==================== ABOUT SECTION START (Opsi D: 4 Blok Rapi) ==================== -->
+    <section id="about" class="pt-28 pb-24 bg-paper border-b border-silver/70">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="flex flex-wrap -mx-4">
+          
+          <!-- Blok 1: Tentang Saya -->
+          <div class="w-full px-4 mb-12 lg:w-1/2">
+            <h4 class="font-bold uppercase text-accent text-sm tracking-wider mb-2">Tentang Saya</h4>
+            <h2 class="font-display font-extrabold text-primary text-3xl mb-4 max-w-md lg:text-4xl">
+              Profesional Muda di Bidang Kreatif &amp; IT
+            </h2>
+            <p class="font-normal text-secondary text-base leading-relaxed">
+              Saya adalah seorang <strong>Content Creator, Desainer Grafis, dan IT Specialist</strong> dengan pengalaman nyata di industri konstruksi dan properti. Terbiasa bekerja secara mandiri maupun berkolaborasi dalam tim lapangan dan studio. Mampu menghasilkan konten kreatif yang menarik untuk platform <strong>TikTok, Instagram, YouTube, dan Facebook</strong>, dengan etos kerja tinggi dan dedikasi penuh terhadap hasil kerja yang berkualitas.
+            </p>
+          </div>
+
+          <!-- Blok 2: Spesialisasi & Skill Inti -->
+          <div class="w-full px-4 mb-12 lg:w-1/2">
+            <h4 class="font-bold uppercase text-accent text-sm tracking-wider mb-2">Keahlian Teknis</h4>
+            <h2 class="font-display font-extrabold text-primary text-3xl mb-4 max-w-md lg:text-4xl">
+              Spesialisasi &amp; Skill Inti
+            </h2>
+            <div class="text-secondary text-sm space-y-2 leading-relaxed">
+              <p class="font-medium text-base mb-2">Penguasaan ekosistem kerja dari hulu ke hilir:</p>
+              <ul class="list-disc list-inside space-y-1.5 text-primary font-medium">
+                <li><strong>Video &amp; Konten:</strong> CapCut (mahir), DaVinci Resolve, Editing short-form TikTok/Reels, Scripting naskah.</li>
+                <li><strong>Desain &amp; Visual:</strong> Canva (mahir), Adobe Photoshop, Corel Draw, Desain brosur, spanduk &amp; flyer cetak (CMYK).</li>
+                <li><strong>Digital &amp; IT:</strong> Pembuatan website responsif, Jaringan komputer (TKJ), Manajemen media sosial, Meta Ads dasar.</li>
+                <li><strong>Keahlian Lain:</strong> Pilot drone, Mengendarai mobil (SIM A aktif), Microsoft Office.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Blok 3: Kontribusi Profesional -->
+          <div class="w-full px-4 mb-12 lg:w-1/2">
+            <h4 class="font-bold uppercase text-accent text-sm tracking-wider mb-2">Rekam Jejak</h4>
+            <h2 class="font-display font-extrabold text-primary text-3xl mb-4 max-w-md lg:text-4xl">
+              Kontribusi Profesional
+            </h2>
+            <p class="font-normal text-secondary text-base leading-relaxed">
+              Saat ini di <strong>PT. Indra Jaya Prakarsa</strong>, saya bertanggung jawab penuh atas pembuatan dan pemeliharaan website resmi perumahan, pengelolaan multi-kanal media sosial, pengambilan rekaman drone kawasan, serta seluruh materi promosi cetak dan digital. Sebelumnya, selama empat tahun (2021–2025) di <strong>PT. Nindya Karya (BUMN)</strong>, saya bertugas di proyek jalan nasional (Pusat Kebudayaan Bali, Flyover Surabaya, Tol Jambi–Palembang) mengoperasikan dan mengawasi mesin pengecoran beton jalan raya.
+            </p>
+          </div>
+
+          <!-- Blok 4: Mari Terkoneksi (Social Buttons Melingkar ala Ananda) -->
+          <div class="w-full px-4 lg:w-1/2">
+            <h4 class="font-bold uppercase text-accent text-sm tracking-wider mb-2">Jejaring</h4>
+            <h2 class="font-display font-extrabold text-primary text-3xl mb-4 max-w-md lg:text-4xl">
+              Mari Terkoneksi
+            </h2>
+            <p class="font-normal text-secondary text-base mb-6 leading-relaxed">
+              Saya selalu terbuka untuk peluang kerja sama proyek kreatif, pembuatan website, dokumentasi udara dengan drone, maupun kesempatan karier profesional.
+            </p>
+
+            <div class="flex items-center flex-wrap gap-3">
+              
+              <!-- WhatsApp -->
+              <a href="https://wa.me/6283829406653?text=Halo%20Dimas,%20saya%20melihat%20portofolio%20Anda." target="_blank" title="WhatsApp" class="w-11 h-11 rounded-full flex justify-center items-center border border-celadon bg-white hover:border-primary hover:bg-primary hover:text-white text-primary transition duration-300 shadow-sm">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+              </a>
+
+              <!-- Telepon -->
+              <a href="tel:+6283829406653" title="Telepon" class="w-11 h-11 rounded-full flex justify-center items-center border border-celadon bg-white hover:border-primary hover:bg-primary hover:text-white text-primary transition duration-300 shadow-sm">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:dimasap0117@gmail.com" title="Email" class="w-11 h-11 rounded-full flex justify-center items-center border border-celadon bg-white hover:border-primary hover:bg-primary hover:text-white text-primary transition duration-300 shadow-sm">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://instagram.com" target="_blank" title="Instagram" class="w-11 h-11 rounded-full flex justify-center items-center border border-celadon bg-white hover:border-primary hover:bg-primary hover:text-white text-primary transition duration-300 shadow-sm">
+                <i data-lucide="instagram" class="w-5 h-5"></i>
+              </a>
+
+              <!-- YouTube -->
+              <a href="https://youtube.com" target="_blank" title="YouTube" class="w-11 h-11 rounded-full flex justify-center items-center border border-celadon bg-white hover:border-primary hover:bg-primary hover:text-white text-primary transition duration-300 shadow-sm">
+                <i data-lucide="youtube" class="w-5 h-5"></i>
+              </a>
+
+              <!-- TikTok -->
+              <a href="https://www.tiktok.com/@echistore5" target="_blank" title="TikTok @echistore5" class="w-11 h-11 rounded-full flex justify-center items-center border border-celadon bg-white hover:border-primary hover:bg-primary hover:text-white text-primary transition duration-300 shadow-sm">
+                <i data-lucide="video" class="w-5 h-5"></i>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ==================== ABOUT SECTION END ==================== -->
+
+
+    <!-- ==================== PORTFOLIO SECTION START (Opsi C: 2 Kolom Gambar Besar) ==================== -->
+    <section id="portfolio" class="pt-28 pb-24 bg-white border-b border-silver/70">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <!-- Header Section -->
+        <div class="w-full text-center mb-12">
+          <h4 class="font-bold text-accent text-sm uppercase tracking-wider mb-2">Portfolio</h4>
+          <h2 class="font-display font-extrabold text-primary text-3xl sm:text-4xl lg:text-5xl mb-4">
+            Project &amp; Galeri Karya
+          </h2>
+          <p class="font-normal text-secondary text-base max-w-xl mx-auto">
+            Berikut beberapa karya dari produksi video drone, materi promosi cetak properti, website, dan dokumentasi proyek nasional.
+          </p>
+
+          <!-- Filter Buttons -->
+          <div class="flex flex-wrap justify-center gap-2 mt-8">
+            <button class="filter-btn active px-5 py-2 rounded-full text-xs font-semibold bg-paper border border-celadon text-primary transition" data-filter="all">Semua Project</button>
+            <button class="filter-btn px-5 py-2 rounded-full text-xs font-semibold bg-paper border border-celadon text-secondary hover:text-primary transition" data-filter="video">Video &amp; Drone</button>
+            <button class="filter-btn px-5 py-2 rounded-full text-xs font-semibold bg-paper border border-celadon text-secondary hover:text-primary transition" data-filter="design">Desain &amp; Flyer</button>
+            <button class="filter-btn px-5 py-2 rounded-full text-xs font-semibold bg-paper border border-celadon text-secondary hover:text-primary transition" data-filter="web">Website &amp; IT</button>
+            <button class="filter-btn px-5 py-2 rounded-full text-xs font-semibold bg-paper border border-celadon text-secondary hover:text-primary transition" data-filter="field">Infrastruktur</button>
+          </div>
+        </div>
+
+        <!-- 2-Column Project Showcase (Seperti Gaya Ananda Satria) -->
+        <div class="flex flex-wrap -mx-4" id="projectContainer">
+
+          <!-- Real Project 1: Aryandra Property -->
+          <div class="project-item w-full md:w-1/2 px-4 mb-12" data-category="web">
+            <div class="bg-paper border border-silver rounded-2xl overflow-hidden hover:shadow-lg transition duration-300">
+              <a href="https://aryandraproperty.com" target="_blank" rel="noopener noreferrer" class="block h-64 bg-primary/10 border-b border-silver relative overflow-hidden group">
+                <img src="assets/aryandra.jpg" alt="Website Aryandra Property" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end justify-between p-4">
+                  <span class="px-3 py-1 bg-primary text-white text-xs font-bold rounded-full">
+                    aryandraproperty.com
+                  </span>
+                  <span class="px-3 py-1 bg-white/90 text-primary text-xs font-bold rounded-full flex items-center gap-1 group-hover:bg-primary group-hover:text-white transition">
+                    <span>Buka Web</span>
+                    <i data-lucide="external-link" class="w-3 h-3"></i>
+                  </span>
+                </div>
+              </a>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="inline-block px-3 py-1 rounded-full bg-accent/15 text-primary text-xs font-bold">Web Development &amp; Properti</span>
+                  <span class="text-xs text-mineral font-semibold">Live Production</span>
+                </div>
+                <h3 class="font-display font-bold text-xl text-primary mb-1">Website Resmi Aryandra Property</h3>
+                <p class="font-bold text-sm text-accent mb-3">
+                  <a href="https://aryandraproperty.com" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition underline flex items-center gap-1">
+                    <span>Kunjungi Website (aryandraproperty.com)</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                  </a>
+                </p>
+                <p class="font-normal text-secondary text-sm leading-relaxed mb-4">
+                  Pembuatan website resmi developer perumahan Aryandra Property yang memasarkan rumah subsidi dan cluster modern di Cikalong Wetan (Bandung Barat) dan Simalungun (Medan). Menampilkan tipe unit, simulasi KPR, keunggulan lokasi, dan direct WhatsApp marketing.
+                </p>
+                <div class="pt-3 border-t border-silver/60 flex items-center justify-between text-xs">
+                  <span class="text-mineral font-medium">WordPress &middot; Responsive &middot; SEO Ready</span>
+                  <button onclick="openModal('Website Resmi Aryandra Property', 'Website katalog properti komprehensif untuk pengembang Aryandra Property. Dibangun dengan navigasi yang memudahkan pencarian rumah subsidi di Bandung Barat dan Medan, integrasi Google Maps, penataan informasi legalitas, dan tombol WhatsApp instan ke sales marketing. Tautan langsung: https://aryandraproperty.com', 'Website & Properti', '', 'https://aryandraproperty.com')" class="text-primary hover:text-accent font-bold underline">
+                    Rincian &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Real Project 2: Deksa Karya Gemilang -->
+          <div class="project-item w-full md:w-1/2 px-4 mb-12" data-category="web">
+            <div class="bg-paper border border-silver rounded-2xl overflow-hidden hover:shadow-lg transition duration-300">
+              <a href="https://deksakaryagemilang.com" target="_blank" rel="noopener noreferrer" class="block h-64 bg-primary/10 border-b border-silver relative overflow-hidden group">
+                <img src="assets/deksa.webp" alt="Website Deksa Karya Gemilang" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end justify-between p-4">
+                  <span class="px-3 py-1 bg-primary text-white text-xs font-bold rounded-full">
+                    deksakaryagemilang.com
+                  </span>
+                  <span class="px-3 py-1 bg-white/90 text-primary text-xs font-bold rounded-full flex items-center gap-1 group-hover:bg-primary group-hover:text-white transition">
+                    <span>Buka Web</span>
+                    <i data-lucide="external-link" class="w-3 h-3"></i>
+                  </span>
+                </div>
+              </a>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="inline-block px-3 py-1 rounded-full bg-accent/15 text-primary text-xs font-bold">Web Development &amp; Company Profile</span>
+                  <span class="text-xs text-mineral font-semibold">Live Production</span>
+                </div>
+                <h3 class="font-display font-bold text-xl text-primary mb-1">Website Deksa Karya Gemilang</h3>
+                <p class="font-bold text-sm text-accent mb-3">
+                  <a href="https://deksakaryagemilang.com" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition underline flex items-center gap-1">
+                    <span>Kunjungi Website (deksakaryagemilang.com)</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                  </a>
+                </p>
+                <p class="font-normal text-secondary text-sm leading-relaxed mb-4">
+                  Website company profile dan e-katalog untuk produsen custom merchandise: pouch, totebag, goodie bag, dan seminar kit instansi/perusahaan. Dilengkapi fitur permintaan sampel, kalkulasi MOQ fleksibel, galeri portofolio, dan form konsultasi penawaran.
+                </p>
+                <div class="pt-3 border-t border-silver/60 flex items-center justify-between text-xs">
+                  <span class="text-mineral font-medium">WordPress &middot; Custom Catalog &middot; Leads CTA</span>
+                  <button onclick="openModal('Website Deksa Karya Gemilang', 'Perancangan website profesional untuk produsen merchandise PT/CV Deksa Karya Gemilang. Menampilkan kategori produk custom (tas, pouch, goodie bag) dengan informasi spesifikasi bahan, galeri produksi, dan tombol CTA penawaran langsung ke tim sales. Tautan langsung: https://deksakaryagemilang.com', 'Website & Merchandise', '', 'https://deksakaryagemilang.com')" class="text-primary hover:text-accent font-bold underline">
+                    Rincian &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Real Project 3: Souvenir Unik Terbaru -->
+          <div class="project-item w-full md:w-1/2 px-4 mb-12" data-category="web">
+            <div class="bg-paper border border-silver rounded-2xl overflow-hidden hover:shadow-lg transition duration-300">
+              <a href="https://souvenirunikterbaru.com" target="_blank" rel="noopener noreferrer" class="block h-64 bg-primary/10 border-b border-silver relative overflow-hidden group">
+                <img src="assets/souvenir.png" alt="Website Souvenir Unik Terbaru" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end justify-between p-4">
+                  <span class="px-3 py-1 bg-primary text-white text-xs font-bold rounded-full">
+                    souvenirunikterbaru.com
+                  </span>
+                  <span class="px-3 py-1 bg-white/90 text-primary text-xs font-bold rounded-full flex items-center gap-1 group-hover:bg-primary group-hover:text-white transition">
+                    <span>Buka Web</span>
+                    <i data-lucide="external-link" class="w-3 h-3"></i>
+                  </span>
+                </div>
+              </a>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="inline-block px-3 py-1 rounded-full bg-accent/15 text-primary text-xs font-bold">Web E-Katalog &amp; Retail</span>
+                  <span class="text-xs text-mineral font-semibold">Live Production</span>
+                </div>
+                <h3 class="font-display font-bold text-xl text-primary mb-1">Website Souvenir Unik Terbaru</h3>
+                <p class="font-bold text-sm text-accent mb-3">
+                  <a href="https://souvenirunikterbaru.com" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition underline flex items-center gap-1">
+                    <span>Kunjungi Website (souvenirunikterbaru.com)</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                  </a>
+                </p>
+                <p class="font-normal text-secondary text-sm leading-relaxed mb-4">
+                  Pembuatan website katalog digital produk souvenir dan cinderamata pernikahan premium: pouch kosmetik, dompet, envelope croco, dan tas souvenir. Menghubungkan pengunjung ke katalog visual lengkap serta pemesanan cepat via WhatsApp.
+                </p>
+                <div class="pt-3 border-t border-silver/60 flex items-center justify-between text-xs">
+                  <span class="text-mineral font-medium">WordPress &middot; Mobile-First &middot; E-Katalog</span>
+                  <button onclick="openModal('Website Souvenir Unik Terbaru', 'Platform website katalog digital untuk brand Souvenir Unik Terbaru yang menyajikan koleksi souvenir pernikahan dan acara istimewa. Tampilan visual responsif dengan struktur layout foto produk yang jelas serta tombol order cepat. Tautan langsung: https://souvenirunikterbaru.com', 'Website E-Katalog', '', 'https://souvenirunikterbaru.com')" class="text-primary hover:text-accent font-bold underline">
+                    Rincian &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Real Drone Video 1 -->
+          <div class="project-item w-full md:w-1/2 px-4 mb-12" data-category="video">
+            <div class="bg-paper border border-silver rounded-2xl overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+              <!-- Clickable Header with Real Thumbnail -->
+              <div class="relative h-64 bg-black overflow-hidden group cursor-pointer" onclick="openModal('Sinematografi Drone Udara #1', 'Perekaman sudut pandang udara menggunakan drone DJI dengan manuver penerbangan yang stabil, transisi sinematik, dan grading warna memikat.', 'Video & Drone', 'assets/drone1.mp4', 'https://www.tiktok.com/@echistore5/video/7681187751244352776')">
+                <img src="assets/drone1_cover.jpg" alt="Drone Footage 1 Dimas Anggara" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 filter brightness-95">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/20 flex flex-col justify-between p-4">
+                  <div class="flex items-center justify-between">
+                    <span class="px-3 py-1 bg-primary/90 backdrop-blur-sm text-celadon text-xs font-bold rounded-full border border-celadon/30 flex items-center gap-1.5">
+                      <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                      Rekaman Drone Asli
+                    </span>
+                    <span class="px-2.5 py-1 bg-black/60 backdrop-blur-sm text-white text-[11px] font-semibold rounded-md">
+                      HD &middot; Vertikal
+                    </span>
+                  </div>
+                  <div class="flex flex-col items-center justify-center my-auto">
+                    <div class="w-16 h-16 rounded-full bg-white/25 backdrop-blur-md border border-white/40 text-white flex items-center justify-center shadow-2xl group-hover:scale-110 group-hover:bg-accent transition duration-300">
+                      <i data-lucide="play" class="w-8 h-8 fill-white translate-x-0.5"></i>
+                    </div>
+                    <span class="mt-2 text-[11px] font-bold text-white uppercase tracking-wider drop-shadow bg-black/60 px-3 py-1 rounded-full">
+                      Klik Untuk Putar Video
+                    </span>
+                  </div>
+                  <div class="text-left text-white">
+                    <span class="text-xs text-celadon font-medium block">TikTok: @echistore5</span>
+                    <span class="text-sm font-bold line-clamp-1">kalian mau dibuatin video drone ngak???</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="inline-block px-3 py-1 rounded-full bg-accent/15 text-primary text-xs font-bold">Pilot Drone &amp; Video Editing</span>
+                    <span class="text-xs text-mineral font-semibold">TikTok @echistore5</span>
+                  </div>
+                  <h3 class="font-display font-bold text-xl text-primary mb-1">Sinematografi Drone Udara #1</h3>
+                  <p class="font-bold text-sm text-accent mb-3 flex flex-wrap items-center gap-3">
+                    <button onclick="openModal('Sinematografi Drone Udara #1', 'Perekaman sudut pandang udara menggunakan drone DJI dengan pergerakan kamera stabil, komposisi lanskap terbuka, dan grading warna sinematik.', 'Video & Drone', 'assets/drone1.mp4', 'https://www.tiktok.com/@echistore5/video/7681187751244352776')" class="underline hover:text-primary font-bold flex items-center gap-1.5 text-primary">
+                      <i data-lucide="play-circle" class="w-4 h-4 text-accent"></i>
+                      <span>Putar Video Langsung</span>
+                    </button>
+                    <span class="text-silver">&bull;</span>
+                    <a href="https://www.tiktok.com/@echistore5/video/7681187751244352776" target="_blank" rel="noopener noreferrer" class="text-xs text-mineral hover:text-primary underline flex items-center gap-1 font-semibold">
+                      <span>Buka di TikTok</span>
+                      <i data-lucide="external-link" class="w-3 h-3"></i>
+                    </a>
+                  </p>
+                  <p class="font-normal text-secondary text-sm leading-relaxed mb-4">
+                    Koleksi rekaman udara drone orisinal karya Dimas Anggara Putra. Menampilkan manuver penerbangan yang halus, kestabilan gimbal saat menembus angin, dan pengolahan warna yang memikat.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-silver/60 flex items-center justify-between text-xs">
+                  <span class="text-mineral font-medium">DJI Drone Pilot &middot; CapCut &middot; DaVinci</span>
+                  <button onclick="openModal('Sinematografi Drone Udara #1', 'Perekaman sudut pandang udara menggunakan drone DJI dengan pergerakan kamera stabil.', 'Video & Drone', 'assets/drone1.mp4', 'https://www.tiktok.com/@echistore5/video/7681187751244352776')" class="text-primary hover:text-accent font-bold underline flex items-center gap-1">
+                    <span>Putar Sekarang</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Real Drone Video 2 -->
+          <div class="project-item w-full md:w-1/2 px-4 mb-12" data-category="video">
+            <div class="bg-paper border border-silver rounded-2xl overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+              <!-- Clickable Header with Real Thumbnail -->
+              <div class="relative h-64 bg-black overflow-hidden group cursor-pointer" onclick="openModal('Sinematografi Drone Udara #2', 'Eksplorasi penerbangan sudut tinggi drone dengan framing lanskap luas dan kontrol kecepatan kamera yang presisi.', 'Video & Drone', 'assets/drone2.mp4', 'https://www.tiktok.com/@echistore5/video/7660571639670672647')">
+                <img src="assets/drone2_cover.jpg" alt="Drone Footage 2 Dimas Anggara" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 filter brightness-95">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/20 flex flex-col justify-between p-4">
+                  <div class="flex items-center justify-between">
+                    <span class="px-3 py-1 bg-primary/90 backdrop-blur-sm text-celadon text-xs font-bold rounded-full border border-celadon/30 flex items-center gap-1.5">
+                      <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                      Rekaman Drone Asli
+                    </span>
+                    <span class="px-2.5 py-1 bg-black/60 backdrop-blur-sm text-white text-[11px] font-semibold rounded-md">
+                      HD &middot; Vertikal
+                    </span>
+                  </div>
+                  <div class="flex flex-col items-center justify-center my-auto">
+                    <div class="w-16 h-16 rounded-full bg-white/25 backdrop-blur-md border border-white/40 text-white flex items-center justify-center shadow-2xl group-hover:scale-110 group-hover:bg-accent transition duration-300">
+                      <i data-lucide="play" class="w-8 h-8 fill-white translate-x-0.5"></i>
+                    </div>
+                    <span class="mt-2 text-[11px] font-bold text-white uppercase tracking-wider drop-shadow bg-black/60 px-3 py-1 rounded-full">
+                      Klik Untuk Putar Video
+                    </span>
+                  </div>
+                  <div class="text-left text-white">
+                    <span class="text-xs text-celadon font-medium block">TikTok: @echistore5</span>
+                    <span class="text-sm font-bold line-clamp-1">dimanaya #fyp #juarasantap</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="inline-block px-3 py-1 rounded-full bg-accent/15 text-primary text-xs font-bold">Pilot Drone &amp; Video Editing</span>
+                    <span class="text-xs text-mineral font-semibold">TikTok @echistore5</span>
+                  </div>
+                  <h3 class="font-display font-bold text-xl text-primary mb-1">Sinematografi Drone Udara #2</h3>
+                  <p class="font-bold text-sm text-accent mb-3 flex flex-wrap items-center gap-3">
+                    <button onclick="openModal('Sinematografi Drone Udara #2', 'Eksplorasi penerbangan sudut tinggi drone dengan framing lanskap luas dan kontrol kecepatan kamera yang presisi.', 'Video & Drone', 'assets/drone2.mp4', 'https://www.tiktok.com/@echistore5/video/7660571639670672647')" class="underline hover:text-primary font-bold flex items-center gap-1.5 text-primary">
+                      <i data-lucide="play-circle" class="w-4 h-4 text-accent"></i>
+                      <span>Putar Video Langsung</span>
+                    </button>
+                    <span class="text-silver">&bull;</span>
+                    <a href="https://www.tiktok.com/@echistore5/video/7660571639670672647" target="_blank" rel="noopener noreferrer" class="text-xs text-mineral hover:text-primary underline flex items-center gap-1 font-semibold">
+                      <span>Buka di TikTok</span>
+                      <i data-lucide="external-link" class="w-3 h-3"></i>
+                    </a>
+                  </p>
+                  <p class="font-normal text-secondary text-sm leading-relaxed mb-4">
+                    Video aerial pendek yang menonjolkan panorama lingkungan dari atas awan dan kontur kawasan. Diedit dengan tempo dinamis untuk kebutuhan promosi media sosial.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-silver/60 flex items-center justify-between text-xs">
+                  <span class="text-mineral font-medium">DJI Drone Pilot &middot; CapCut &middot; DaVinci</span>
+                  <button onclick="openModal('Sinematografi Drone Udara #2', 'Eksplorasi penerbangan sudut tinggi drone dengan framing lanskap luas.', 'Video & Drone', 'assets/drone2.mp4', 'https://www.tiktok.com/@echistore5/video/7660571639670672647')" class="text-primary hover:text-accent font-bold underline flex items-center gap-1">
+                    <span>Putar Sekarang</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Real Drone Video 3 -->
+          <div class="project-item w-full md:w-1/2 px-4 mb-12" data-category="video">
+            <div class="bg-paper border border-silver rounded-2xl overflow-hidden hover:shadow-xl transition duration-300 flex flex-col h-full">
+              <!-- Clickable Header with Real Thumbnail -->
+              <div class="relative h-64 bg-black overflow-hidden group cursor-pointer" onclick="openModal('Sinematografi Drone Udara #3', 'Pengambilan rekaman visual sinematik dengan DJI Mini 3 untuk kebutuhan konten komersial dan portofolio video kreatif.', 'Video & Drone', 'assets/drone3.mp4', 'https://www.tiktok.com/@echistore5/video/7682242977787284754')">
+                <img src="assets/drone3_cover.jpg" alt="Drone Footage 3 Dimas Anggara" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 filter brightness-95">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/20 flex flex-col justify-between p-4">
+                  <div class="flex items-center justify-between">
+                    <span class="px-3 py-1 bg-primary/90 backdrop-blur-sm text-celadon text-xs font-bold rounded-full border border-celadon/30 flex items-center gap-1.5">
+                      <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                      Rekaman Drone Asli
+                    </span>
+                    <span class="px-2.5 py-1 bg-black/60 backdrop-blur-sm text-white text-[11px] font-semibold rounded-md">
+                      HD &middot; Vertikal
+                    </span>
+                  </div>
+                  <div class="flex flex-col items-center justify-center my-auto">
+                    <div class="w-16 h-16 rounded-full bg-white/25 backdrop-blur-md border border-white/40 text-white flex items-center justify-center shadow-2xl group-hover:scale-110 group-hover:bg-accent transition duration-300">
+                      <i data-lucide="play" class="w-8 h-8 fill-white translate-x-0.5"></i>
+                    </div>
+                    <span class="mt-2 text-[11px] font-bold text-white uppercase tracking-wider drop-shadow bg-black/60 px-3 py-1 rounded-full">
+                      Klik Untuk Putar Video
+                    </span>
+                  </div>
+                  <div class="text-left text-white">
+                    <span class="text-xs text-celadon font-medium block">TikTok: @echistore5</span>
+                    <span class="text-sm font-bold line-clamp-1">Lokasi mana lagi ya? #djimini3 #dji</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="inline-block px-3 py-1 rounded-full bg-accent/15 text-primary text-xs font-bold">Pilot Drone &amp; Video Editing</span>
+                    <span class="text-xs text-mineral font-semibold">TikTok @echistore5</span>
+                  </div>
+                  <h3 class="font-display font-bold text-xl text-primary mb-1">Sinematografi Drone Udara #3</h3>
+                  <p class="font-bold text-sm text-accent mb-3 flex flex-wrap items-center gap-3">
+                    <button onclick="openModal('Sinematografi Drone Udara #3', 'Pengambilan rekaman visual sinematik dengan drone untuk kebutuhan konten komersial dan portofolio video kreatif.', 'Video & Drone', 'assets/drone3.mp4', 'https://www.tiktok.com/@echistore5/video/7682242977787284754')" class="underline hover:text-primary font-bold flex items-center gap-1.5 text-primary">
+                      <i data-lucide="play-circle" class="w-4 h-4 text-accent"></i>
+                      <span>Putar Video Langsung</span>
+                    </button>
+                    <span class="text-silver">&bull;</span>
+                    <a href="https://www.tiktok.com/@echistore5/video/7682242977787284754" target="_blank" rel="noopener noreferrer" class="text-xs text-mineral hover:text-primary underline flex items-center gap-1 font-semibold">
+                      <span>Buka di TikTok</span>
+                      <i data-lucide="external-link" class="w-3 h-3"></i>
+                    </a>
+                  </p>
+                  <p class="font-normal text-secondary text-sm leading-relaxed mb-4">
+                    Video udara dengan sinkronisasi musik latar yang menarik, menonjolkan kemampuan piloting drone yang stabil dan penguasaan ritme editing video vertikal.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-silver/60 flex items-center justify-between text-xs">
+                  <span class="text-mineral font-medium">DJI Drone Pilot &middot; CapCut &middot; DaVinci</span>
+                  <button onclick="openModal('Sinematografi Drone Udara #3', 'Pengambilan rekaman visual sinematik dengan drone untuk kebutuhan konten komersial.', 'Video & Drone', 'assets/drone3.mp4', 'https://www.tiktok.com/@echistore5/video/7682242977787284754')" class="text-primary hover:text-accent font-bold underline flex items-center gap-1">
+                    <span>Putar Sekarang</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Desain Brosur & Flyer Cetak -->
+          <div class="project-item w-full md:w-1/2 px-4 mb-12" data-category="design">
+            <div class="bg-paper border border-silver rounded-2xl overflow-hidden hover:shadow-lg transition duration-300">
+              <div class="h-64 bg-primary/10 border-b border-silver flex items-center justify-center relative overflow-hidden group">
+                <div class="w-full h-full bg-gradient-to-tr from-[#2C382A] to-[#4A5D45] flex flex-col items-center justify-center text-white p-6 text-center">
+                  <i data-lucide="layout" class="w-16 h-16 text-celadon mb-2 group-hover:scale-110 transition duration-300"></i>
+                  <span class="text-xs uppercase tracking-widest font-bold text-celadon">Standar Cetak 300 DPI</span>
+                  <span class="text-xl font-bold mt-1">Brosur &amp; Flyer Penjualan Properti</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="inline-block px-3 py-1 rounded-full bg-accent/15 text-primary text-xs font-bold">Desain Grafis Komersial</span>
+                  <span class="text-xs text-mineral font-semibold">Cetak &amp; Digital</span>
+                </div>
+                <h3 class="font-display font-bold text-xl text-primary mb-1">Brosur, Spanduk &amp; Flyer Promosi</h3>
+                <p class="font-bold text-sm text-accent mb-3">
+                  <button onclick="openModal('Brosur, Spanduk & Flyer Promosi', 'Paket materi promosi cetak dan digital komprehensif: brosur lipat tiga, flyer pameran, spanduk tiang jalan, dan baliho tepi jalan raya. Mengedepankan keterbacaan denah tipe 36, skema cicilan KPR bank, dan call-to-action kontak sales marketing.', 'Desain Grafis')" class="underline hover:text-primary font-bold flex items-center gap-1">
+                    <span>Lihat Rincian Desain</span>
+                    <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                  </button>
+                </p>
+                <p class="font-normal text-secondary text-sm leading-relaxed mb-4">
+                  Perancangan materi promosi cetak dengan profil warna CMYK beresolusi tinggi (brosur tri-fold, baliho billboard, spanduk), serta materi banner promosi digital untuk siaran WhatsApp dan iklan Meta Ads.
+                </p>
+                <div class="pt-3 border-t border-silver/60 flex items-center justify-between text-xs">
+                  <span class="text-mineral font-medium">Photoshop &middot; Corel Draw &middot; Canva Mahir</span>
+                  <button onclick="openModal('Brosur, Spanduk & Flyer Promosi', 'Materi promosi cetak dan digital komprehensif.', 'Desain Grafis')" class="text-primary hover:text-accent font-bold underline">
+                    Rincian &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Short-Form TikTok & Reels -->
+          <div class="project-item w-full md:w-1/2 px-4 mb-12" data-category="video">
+            <div class="bg-paper border border-silver rounded-2xl overflow-hidden hover:shadow-lg transition duration-300">
+              <div class="h-64 bg-primary/10 border-b border-silver flex items-center justify-center relative overflow-hidden group">
+                <div class="w-full h-full bg-gradient-to-tr from-[#253023] to-[#43553E] flex flex-col items-center justify-center text-white p-6 text-center">
+                  <i data-lucide="smartphone" class="w-16 h-16 text-celadon mb-2 group-hover:scale-110 transition duration-300"></i>
+                  <span class="text-xs uppercase tracking-widest font-bold text-celadon">Format Vertikal 9:16</span>
+                  <span class="text-xl font-bold mt-1">Serial Edukasi Rumah TikTok &amp; Reels</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="inline-block px-3 py-1 rounded-full bg-accent/15 text-primary text-xs font-bold">Short-Form Content</span>
+                  <span class="text-xs text-mineral font-semibold">Organik &amp; Viral</span>
+                </div>
+                <h3 class="font-display font-bold text-xl text-primary mb-1">Video Room Tour &amp; Tips KPR</h3>
+                <p class="font-bold text-sm text-accent mb-3">
+                  <button onclick="openModal('Video Room Tour & Tips KPR', 'Produksi konten video pendek secara rutin: mulai dari riset topik KPR, penyusunan naskah hook 3 detik pertama, perekaman sudut interior ruangan, hingga penambahan efek suara dan penulisan caption interaktif.', 'Video & Konten')" class="underline hover:text-primary font-bold flex items-center gap-1">
+                    <span>Lihat Rincian Konten</span>
+                    <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                  </button>
+                </p>
+                <p class="font-normal text-secondary text-sm leading-relaxed mb-4">
+                  Produksi konten video pendek rutin yang mengulas keuntungan rumah subsidi, tutorial proses pengajuan KPR, serta room tour visual untuk menarik calon pembeli muda di TikTok dan Instagram.
+                </p>
+                <div class="pt-3 border-t border-silver/60 flex items-center justify-between text-xs">
+                  <span class="text-mineral font-medium">Naskah Hook &middot; CapCut &middot; Sound FX</span>
+                  <button onclick="openModal('Video Room Tour & Tips KPR', 'Produksi video vertikal short-form untuk media sosial.', 'Video & Konten')" class="text-primary hover:text-accent font-bold underline">
+                    Rincian &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7: Infrastruktur BUMN Nindya Karya -->
+          <div class="project-item w-full md:w-1/2 px-4 mb-12" data-category="field">
+            <div class="bg-paper border border-silver rounded-2xl overflow-hidden hover:shadow-lg transition duration-300">
+              <div class="h-64 bg-primary/10 border-b border-silver flex items-center justify-center relative overflow-hidden group">
+                <div class="w-full h-full bg-gradient-to-tr from-[#1E261B] to-[#364431] flex flex-col items-center justify-center text-white p-6 text-center">
+                  <i data-lucide="hard-hat" class="w-16 h-16 text-celadon mb-2 group-hover:scale-110 transition duration-300"></i>
+                  <span class="text-xs uppercase tracking-widest font-bold text-celadon">Proyek Strategis Nasional</span>
+                  <span class="text-xl font-bold mt-1">Rigit Jalan Pengecoran Alat Berat</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="inline-block px-3 py-1 rounded-full bg-accent/15 text-primary text-xs font-bold">Infrastruktur BUMN</span>
+                  <span class="text-xs text-mineral font-semibold">4 Tahun Lapangan</span>
+                </div>
+                <h3 class="font-display font-bold text-xl text-primary mb-1">Operasional Mesin Gomaco &amp; Wirtgen</h3>
+                <p class="font-bold text-sm text-accent mb-3">
+                  <button onclick="openModal('Operasional Mesin Gomaco & Wirtgen', 'Pengalaman empat tahun mengoperasikan dan mengawasi mesin pengecoran beton jalan tol di ruas Bali, Surabaya, dan Jambi-Palembang bersama PT. Nindya Karya. Memastikan kerataan rigid pavement, menjaga ketepatan elevasi, dan koordinasi armada truk mixer beton.', 'Infrastruktur Nasional')" class="underline hover:text-primary font-bold flex items-center gap-1">
+                    <span>Lihat Dokumentasi Proyek</span>
+                    <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                  </button>
+                </p>
+                <p class="font-normal text-secondary text-sm leading-relaxed mb-4">
+                  Pengalaman teknis lapangan 4 tahun mengawasi dan mengoperasikan mesin concrete paver Gomaco dan Wirtgen pada ruas Jalan Tol Jambi–Palembang, Flyover Surabaya, dan Pusat Kebudayaan Bali bersama PT. Nindya Karya.
+                </p>
+                <div class="pt-3 border-t border-silver/60 flex items-center justify-between text-xs">
+                  <span class="text-mineral font-medium">PT. Nindya Karya &middot; K3 Standar &middot; Presisi</span>
+                  <button onclick="openModal('Operasional Mesin Gomaco & Wirtgen', 'Pengalaman proyek infrastruktur nasional bersama BUMN.', 'Infrastruktur Nasional')" class="text-primary hover:text-accent font-bold underline">
+                    Rincian &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ==================== PORTFOLIO SECTION END ==================== -->
+
+
+    <!-- ==================== PENGALAMAN & INSTANSI START ==================== -->
+    <section id="pengalaman" class="pt-28 pb-24 bg-paper border-b border-silver/70">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="w-full text-center mb-16">
+          <h4 class="font-bold text-accent text-sm uppercase tracking-wider mb-2">Pengalaman Kerja &amp; Pendidikan</h4>
+          <h2 class="font-display font-extrabold text-primary text-3xl sm:text-4xl lg:text-5xl mb-4">
+            Riwayat Profesional &amp; Tempat Belajar
+          </h2>
+          <p class="font-normal text-secondary text-base max-w-xl mx-auto">
+            Instansi dan perusahaan tempat saya menimba ilmu, mengasah ketahanan kerja, dan berkontribusi nyata.
+          </p>
+        </div>
+
+        <!-- Instansi Badges / Logos Strip ala Ananda Satria -->
+        <div class="w-full flex flex-wrap items-center justify-center gap-6 mb-16">
+          <div class="px-6 py-4 bg-white border border-silver rounded-2xl shadow-sm text-center">
+            <span class="text-xs text-mineral font-bold uppercase tracking-wider block">BUMN Konstruksi Nasional</span>
+            <span class="font-display font-extrabold text-primary text-lg">PT. Nindya Karya</span>
+          </div>
+          <div class="px-6 py-4 bg-white border border-silver rounded-2xl shadow-sm text-center">
+            <span class="text-xs text-mineral font-bold uppercase tracking-wider block">Perusahaan Properti</span>
+            <span class="font-display font-extrabold text-primary text-lg">PT. Indra Jaya Prakarsa</span>
+          </div>
+          <div class="px-6 py-4 bg-white border border-silver rounded-2xl shadow-sm text-center">
+            <span class="text-xs text-mineral font-bold uppercase tracking-wider block">Pendidikan Vokasi (TKJ)</span>
+            <span class="font-display font-extrabold text-primary text-lg">SMK Negeri 1 Plered</span>
+          </div>
+        </div>
+
+        <!-- Timeline Chronology Cards -->
+        <div class="space-y-8 max-w-4xl mx-auto">
+          
+          <!-- Experience 1 -->
+          <div class="p-8 bg-white border border-silver rounded-2xl shadow-sm space-y-3">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+              <div>
+                <h3 class="font-display font-bold text-xl text-primary">IT &amp; Desain Grafis</h3>
+                <div class="text-accent text-sm font-bold">PT. Indra Jaya Prakarsa</div>
+              </div>
+              <span class="text-xs font-bold text-mineral uppercase tracking-wider bg-paper px-3 py-1 rounded-full border border-celadon/50">
+                2025 – Sekarang &middot; Cikalong Wetan
+              </span>
+            </div>
+            <ul class="text-secondary text-sm space-y-1.5 pt-2 leading-relaxed">
+              <li>&bull; Membuat dan mengelola website resmi perusahaan perumahan serta katalog tipe unit.</li>
+              <li>&bull; Mengelola akun media sosial resmi (TikTok, Instagram, YouTube, Facebook).</li>
+              <li>&bull; Membuat konten kreatif: foto drone kawasan, video promosi reels/TikTok, dan materi iklan.</li>
+              <li>&bull; Mendesain materi promosi cetak: brosur lipat tiga, spanduk jalan, flyer pameran, dan baliho billboard.</li>
+            </ul>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="p-8 bg-white border border-silver rounded-2xl shadow-sm space-y-3">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+              <div>
+                <h3 class="font-display font-bold text-xl text-primary">Asisten Operator Concrete Paver (Gomaco / Wirtgen)</h3>
+                <div class="text-mineral text-sm font-bold">PT. Nindya Karya (Persero)</div>
+              </div>
+              <span class="text-xs font-bold text-mineral uppercase tracking-wider bg-paper px-3 py-1 rounded-full border border-celadon/50">
+                2021 – 2025 (4 Tahun)
+              </span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs pt-2">
+              <div class="p-3 bg-paper rounded-xl border border-silver">
+                <span class="text-accent font-bold">2021 – 2022</span>
+                <div class="text-primary font-bold mt-1">Rigit Jalan Pusat Kebudayaan Bali</div>
+              </div>
+              <div class="p-3 bg-paper rounded-xl border border-silver">
+                <span class="text-accent font-bold">2022 – 2023</span>
+                <div class="text-primary font-bold mt-1">Rigit Jalan Flyover Surabaya</div>
+              </div>
+              <div class="p-3 bg-paper rounded-xl border border-silver">
+                <span class="text-accent font-bold">2024 – 2025</span>
+                <div class="text-primary font-bold mt-1">Rigit Jalan TOL Jambi–Palembang</div>
+              </div>
+            </div>
+
+            <ul class="text-secondary text-sm space-y-1.5 pt-2 leading-relaxed">
+              <li>&bull; Mengoperasikan dan mengawasi mesin pengecoran beton jalan tol dengan toleransi elevasi ketat.</li>
+              <li>&bull; Berkoordinasi dengan pengawas teknis lapangan untuk memastikan kelancaran suplai armada truk mixer.</li>
+            </ul>
+          </div>
+
+          <!-- Education -->
+          <div class="p-8 bg-white border border-silver rounded-2xl shadow-sm space-y-2">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+              <div>
+                <h3 class="font-display font-bold text-xl text-primary">SMK Negeri 1 Plered</h3>
+                <div class="text-mineral text-sm font-semibold">Jurusan Teknik Komputer Jaringan (TKJ)</div>
+              </div>
+              <span class="text-xs font-bold text-mineral uppercase tracking-wider bg-paper px-3 py-1 rounded-full border border-celadon/50">
+                Lulus: 2021 &middot; Purwakarta
+              </span>
+            </div>
+            <p class="text-secondary text-sm leading-relaxed">
+              Mempelajari arsitektur jaringan komputer, instalasi perangkat keras dan lunak, konfigurasi sistem operasi, dan troubleshooting perangkat IT.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ==================== PENGALAMAN & INSTANSI END ==================== -->
+
+
+    <!-- ==================== CONTACT SECTION START ==================== -->
+    <section id="contact" class="pt-28 pb-24 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="w-full text-center mb-16">
+          <h4 class="font-bold text-accent text-sm uppercase tracking-wider mb-2">Kontak</h4>
+          <h2 class="font-display font-extrabold text-primary text-3xl sm:text-4xl lg:text-5xl mb-4">
+            Mari Bekerja Sama
+          </h2>
+          <p class="font-normal text-secondary text-base max-w-xl mx-auto">
+            Punya proyek video drone, materi promosi properti, website, atau ingin berdiskusi peluang kerja? Silakan tinggalkan pesan di bawah ini.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start max-w-5xl mx-auto">
+          
+          <!-- Kontak Info Kiri -->
+          <div class="md:col-span-5 space-y-6">
+            <h3 class="font-display font-bold text-2xl text-primary">Informasi Kontak</h3>
+            <p class="text-secondary text-sm leading-relaxed">
+              Saya siap membantu kebutuhan konten visual udara, materi iklan kreatif, dan pengembangan website untuk bisnis Anda.
+            </p>
+
+            <div class="space-y-4 pt-2">
+              <a href="https://wa.me/6283829406653" target="_blank" class="flex items-center gap-4 p-4 rounded-2xl bg-paper border border-silver hover:border-primary transition group">
+                <div class="w-12 h-12 rounded-full bg-accent/20 text-primary flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition">
+                  <i data-lucide="message-circle" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-mineral font-semibold">WhatsApp &amp; Telepon</div>
+                  <div class="text-primary font-bold">0838-2940-6653</div>
+                </div>
+              </a>
+
+              <a href="mailto:dimasap0117@gmail.com" class="flex items-center gap-4 p-4 rounded-2xl bg-paper border border-silver hover:border-primary transition group">
+                <div class="w-12 h-12 rounded-full bg-accent/20 text-primary flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition">
+                  <i data-lucide="mail" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-mineral font-semibold">Alamat Email</div>
+                  <div class="text-primary font-bold">dimasap0117@gmail.com</div>
+                </div>
+              </a>
+
+              <div class="flex items-center gap-4 p-4 rounded-2xl bg-paper border border-silver">
+                <div class="w-12 h-12 rounded-full bg-accent/20 text-primary flex items-center justify-center shrink-0">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-mineral font-semibold">Lokasi Domisili</div>
+                  <div class="text-primary font-bold">Cikalong Wetan, Bandung Barat</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form WhatsApp Kanan -->
+          <div class="md:col-span-7 bg-paper border border-silver p-8 rounded-2xl shadow-sm space-y-6">
+            <h3 class="font-display font-bold text-xl text-primary">Kirim Pesan WhatsApp Instan</h3>
+            <p class="text-xs text-secondary">Isi data di bawah ini dan pesan akan langsung siap diteruskan ke WhatsApp saya dalam satu klik.</p>
+
+            <form onsubmit="kirimWhatsApp(event)" class="space-y-4">
+              <div class="space-y-1.5">
+                <label class="text-xs font-bold text-primary">Nama Anda / Perusahaan</label>
+                <input type="text" id="waNama" required placeholder="Contoh: Budi Santoso" class="w-full px-4 py-3 rounded-xl bg-white border border-silver text-primary text-sm focus:outline-none focus:border-primary transition">
+              </div>
+
+              <div class="space-y-1.5">
+                <label class="text-xs font-bold text-primary">Kategori Kebutuhan</label>
+                <select id="waLayanan" class="w-full px-4 py-3 rounded-xl bg-white border border-silver text-primary text-sm focus:outline-none focus:border-primary transition">
+                  <option value="Editing Video / Konten TikTok &amp; Reels">Editing Video / TikTok &amp; Reels</option>
+                  <option value="Pilot Drone &amp; Footage Udara">Pilot Drone &amp; Footage Udara</option>
+                  <option value="Desain Brosur, Spanduk &amp; Flyer">Desain Brosur, Spanduk &amp; Flyer</option>
+                  <option value="Pembuatan Website &amp; IT">Pembuatan Website &amp; IT</option>
+                  <option value="Peluang Kerja / Rekrutmen">Peluang Kerja / Rekrutmen</option>
+                </select>
+              </div>
+
+              <div class="space-y-1.5">
+                <label class="text-xs font-bold text-primary">Pesan atau Rencana Proyek</label>
+                <textarea id="waPesan" rows="4" required placeholder="Ceritakan kebutuhan promosi, estimasi waktu, atau pertanyaan Anda..." class="w-full px-4 py-3 rounded-xl bg-white border border-silver text-primary text-sm focus:outline-none focus:border-primary transition"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 rounded-full bg-primary hover:bg-primaryHover text-white font-bold text-sm uppercase tracking-wider shadow-sm transition">
+                Kirim Pesan ke WhatsApp Dimas &rarr;
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ==================== CONTACT SECTION END ==================== -->
+
+  </main>
+
+  <!-- ==================== FOOTER START ==================== -->
+  <footer class="bg-primary text-white py-12 border-t border-silver">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
+      <div class="flex items-center gap-3">
+        <img src="assets/dimas.jpg" alt="Dimas Anggara Putra" class="w-9 h-9 rounded-full object-cover object-top border-2 border-celadon">
+        <div>
+          <span class="font-display font-bold text-base block">Dimas Anggara Putra</span>
+          <span class="text-celadon text-xs">Content Creator &middot; Graphic Designer &middot; IT Specialist</span>
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-6 text-xs text-celadon">
+        <a href="#home" class="hover:text-white transition">Beranda</a>
+        <a href="#about" class="hover:text-white transition">Tentang Saya</a>
+        <a href="#portfolio" class="hover:text-white transition">Portfolio</a>
+        <a href="#pengalaman" class="hover:text-white transition">Pengalaman</a>
+        <a href="#contact" class="hover:text-white transition">Kontak</a>
+      </div>
+
+      <div class="text-xs text-celadon">
+        &copy; 2026 Dimas Anggara Putra. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <!-- ==================== FOOTER END ==================== -->
+
+  <!-- ==================== MODAL POPUP PREVIEW KARYA ==================== -->
+  <div id="projectModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm">
+    <div class="relative w-full max-w-lg bg-white rounded-2xl border border-silver p-6 sm:p-8 space-y-4 shadow-2xl max-h-[92vh] overflow-y-auto">
+      <button onclick="closeModal()" class="absolute top-4 right-4 p-2 text-secondary hover:text-primary rounded-full hover:bg-paper transition z-10" title="Tutup">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="inline-block px-3 py-1 rounded-full bg-accent/20 text-primary text-xs font-bold uppercase tracking-wider" id="modalCategory">
+        Kategori
+      </div>
+      <h3 class="font-display font-extrabold text-2xl text-primary" id="modalTitle">Judul Proyek</h3>
+      
+      <!-- Video Player Container (Plays local MP4 directly & reliably) -->
+      <div id="modalVideoContainer" class="hidden flex-col items-center my-3 bg-stone-900 p-2.5 rounded-2xl border border-silver/40">
+        <video id="modalVideoPlayer" class="w-full max-w-[320px] max-h-[500px] rounded-xl shadow-xl bg-black object-contain mx-auto" controls playsinline preload="metadata">
+          <source id="modalVideoSource" src="" type="video/mp4">
+          Browser Anda tidak mendukung pemutar video HTML5.
+        </video>
+        <div class="mt-2.5 text-[11px] text-white/80 flex items-center justify-between w-full px-2">
+          <span class="flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Video Asli &middot; Resolusi HD
+          </span>
+          <span class="text-celadon font-medium">Vertical 9:16</span>
+        </div>
+      </div>
+
+      <p class="text-secondary text-sm leading-relaxed" id="modalDesc">Deskripsi proyek.</p>
+      
+      <div class="pt-4 border-t border-silver flex flex-wrap items-center justify-between gap-3">
+        <a id="modalDirectLink" href="#" target="_blank" rel="noopener noreferrer" class="hidden text-xs font-bold text-accent hover:text-primary transition underline flex items-center gap-1.5 py-1">
+          <span>Buka di Platform Asli</span>
+          <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+        </a>
+        <div class="flex items-center gap-2 ml-auto">
+          <button onclick="closeModal()" class="px-4 py-2 rounded-full text-xs font-bold text-secondary hover:text-primary transition">Tutup</button>
+          <a id="modalWhatsAppBtn" href="#" target="_blank" class="px-5 py-2.5 rounded-full bg-primary hover:bg-primaryHover text-white text-xs font-bold uppercase tracking-wider transition">Diskusi via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Logic -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Hamburger Mobile Menu Toggle
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
+    });
+
+    // Close menu when clicking links
+    document.querySelectorAll('#nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.add('hidden');
+      });
+    });
+
+    // Portfolio Category Filtering
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectItems = document.querySelectorAll('.project-item');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        projectItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Modal Details Logic
+    const modal = document.getElementById('projectModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDesc = document.getElementById('modalDesc');
+    const modalCategory = document.getElementById('modalCategory');
+    const modalWhatsAppBtn = document.getElementById('modalWhatsAppBtn');
+    const modalVideoContainer = document.getElementById('modalVideoContainer');
+    const modalVideoPlayer = document.getElementById('modalVideoPlayer');
+    const modalVideoSource = document.getElementById('modalVideoSource');
+    const modalDirectLink = document.getElementById('modalDirectLink');
+
+    function openModal(title, desc, category, videoSrc, directUrl) {
+      modalTitle.innerText = title;
+      modalDesc.innerText = desc;
+      modalCategory.innerText = category;
+      modalWhatsAppBtn.href = `https://wa.me/6283829406653?text=Halo%20Dimas,%20saya%20tertarik%20dengan%20karya%20"${encodeURIComponent(title)}".`;
+      
+      if (videoSrc) {
+        modalVideoSource.src = videoSrc;
+        modalVideoPlayer.load();
+        modalVideoPlayer.play().catch(() => {});
+        modalVideoContainer.classList.remove('hidden');
+        modalVideoContainer.classList.add('flex');
+      } else {
+        if (modalVideoPlayer) {
+          modalVideoPlayer.pause();
+        }
+        if (modalVideoSource) {
+          modalVideoSource.src = '';
+        }
+        modalVideoContainer.classList.add('hidden');
+        modalVideoContainer.classList.remove('flex');
+      }
+
+      if (directUrl) {
+        modalDirectLink.href = directUrl;
+        modalDirectLink.classList.remove('hidden');
+        const span = modalDirectLink.querySelector('span');
+        if (span) {
+          if (directUrl.includes('tiktok.com')) {
+            span.innerText = 'Buka di Akun TikTok (@echistore5)';
+          } else {
+            span.innerText = 'Kunjungi Website Langsung';
+          }
+        }
+      } else {
+        modalDirectLink.classList.add('hidden');
+      }
+
+      modal.classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeModal() {
+      if (modalVideoPlayer) {
+        modalVideoPlayer.pause();
+        modalVideoPlayer.currentTime = 0;
+      }
+      if (modalVideoSource) {
+        modalVideoSource.src = '';
+      }
+      modal.classList.add('hidden');
+    }
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+
+    // Direct WhatsApp Form Submitter
+    function kirimWhatsApp(e) {
+      e.preventDefault();
+      const nama = document.getElementById('waNama').value;
+      const layanan = document.getElementById('waLayanan').value;
+      const pesan = document.getElementById('waPesan').value;
+
+      const formatPesan = `Halo Dimas, saya ${nama}.\nKebutuhan: ${layanan}\n\nPesan:\n${pesan}`;
+      const url = `https://wa.me/6283829406653?text=${encodeURIComponent(formatPesan)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
